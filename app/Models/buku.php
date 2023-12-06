@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class buku extends Model
 {
-    use HasFactory;
+    public function peminjaman() {
+        return $this->hasMany(peminjaman::class, 'bukuId', 'id');
+    }
+    // use HasFactory;
 }

@@ -1,5 +1,6 @@
-@extends('layouts.sidebar')
+{{-- @extends('layouts.sidebar') --}}
 
-@section('content')
+{{-- @section('content') --}}
     <h1>Home Petugas Page</h1>
-@endsection
+    <a href="/logout"><button>Logout</button></a>
+{{-- @endsection --}}
